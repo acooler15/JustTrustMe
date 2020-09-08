@@ -21,4 +21,4 @@ jobs:
     - name: cancel proxy
       run: sed '/^systemProp.http/s/^#*/#/' -i gradle.properties
     - name: Build with Gradle
-      run: ./gradlew assembleRelease
+      run: ./gradlew assembleRelease --info
